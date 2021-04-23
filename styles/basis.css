@@ -14,7 +14,6 @@ html {
 body {
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
-
     background-color: var(--background);
     color: var(--text);
 }
@@ -119,3 +118,42 @@ input.form:focus-visible {
     outline: none;
 }
 
+form.searchbox {
+    width: 400px;
+    height: 40px;
+    background-color: var(--background-off);
+    border: 1px solid var(--borders);
+    border-radius: 3px;
+    margin: 10px;
+}
+form.searchbox:focus-within {
+    border: 1px solid var(--primary);
+}
+form.searchbox input[type="search"] {
+    border: 0;
+    background: transparent;
+    height: 40px;
+    width: 360px;
+    padding-left: 5px;
+}
+form.searchbox input[type="search"]:focus-visible {
+    border: 0;
+    outline: none;
+}
+form.searchbox button[type="submit"] {
+    border: 0;
+    height: 37px;
+    width: 37px;
+    margin: 1.5px 1.5px;
+    float: right;
+    background-color: var(--primary);
+    border-radius: 3px;
+}
+form.searchbox button[type="submit"]:hover {
+    background-color: var(--primary-off);
+}
+form.searchbox button[type="submit"] svg {
+    color: var(--alt-text);
+    fill: currentColor;
+    margin: 3px 0 0 1px;
+}
