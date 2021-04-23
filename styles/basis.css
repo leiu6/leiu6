@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
-html {
-    --text: #000;
-    --alt-text: #fff;
-    --primary: rgb(231, 0, 77);
-    --primary-off: rgb(177, 0, 59);
-    --secondary: rgb(16, 59, 116);
-    --secondary-off: rgb(2, 6, 63);
-    --background: #fff;
-    --background-off: rgb(250, 250, 250);
-    --borders: rgb(212, 212, 212);
-    --grey-text: rgb(20, 20, 20);
+:root {
+    /* these are the site colors */
+    --text: #000; /* default color for text */
+    --alt-text: #fff; /* text color on dark backgrounds */
+    --primary: rgb(231, 0, 77); /* primary color for highlighted elements */
+    --primary-off: rgb(177, 0, 59); /* altered version of primary for hover events and such */
+    --secondary: rgb(16, 59, 116); /* secondary color for alternative highlights */
+    --secondary-off: rgb(2, 6, 63); /* altered version of secondary for hover events and such */
+    --background: #fff; /* standard background color */
+    --background-off: rgb(250, 250, 250); /* a darker bakground color to contrast with --background */
+    --borders: rgb(212, 212, 212);  /* the color of borders for elements with a background color of --background or --background-off */
+    --grey-text: rgb(20, 20, 20); /* this is a more grey version of the text color for certain alternative uses like forms */
 }
+
 body {
     margin: 0;
     font-family: 'Noto Sans JP', sans-serif;
@@ -71,18 +73,23 @@ button.btn.secondary:hover {
     background-color: var(--secondary-off);
 }
 
-p.primary, span.primary, h1.primary, h2.primary, h3.primary, h4.primary, h5.primary, h6.primary {
+/* various global classes for textual elements */
+
+p.primary, span.primary, h1.primary, h2.primary, h3.primary, h4.primary, h5.primary, h6.primary em.primary strong.primary {
     color: var(--primary);
 }
-p.primary-off, span.primary.off, h1.primary-off, h2.primary-off, h3.primary-off, h4.primary-off, h5.primary-off, h6.primary-off {
+p.primary-off, span.primary.off, h1.primary-off, h2.primary-off, h3.primary-off, h4.primary-off, h5.primary-off, h6.primary-off, em.primary-off, strong.primary-off {
     color: var(--primary-off);
 }
-p.secondary, span.secondary, h1.secondary, h2.secondary, h3.secondary, h4.secondary, h5.secondary, h6.secondary {
+p.secondary, span.secondary, h1.secondary, h2.secondary, h3.secondary, h4.secondary, h5.secondary, h6.secondary, em.secondary, strong.secondary {
     color: var(--secondary);
 }
-p.secondary-off, span.secondary-off, h1.secondary-off, h2.secondary-off,h3.secondary-off, h4.secondary-off, h5.secondary-off, h6.secondary-off {
+p.secondary-off, span.secondary-off, h1.secondary-off, h2.secondary-off,h3.secondary-off, h4.secondary-off, h5.secondary-off, h6.secondary-off, em.secondary-off, strong.secondary-off {
     color: var(--secondary-off);
 }
+
+
+/* commence the forms styling */
 
 form.standard {
     background-color: var(--background-off);
@@ -125,6 +132,7 @@ form.searchbox {
     border: 1px solid var(--borders);
     border-radius: 3px;
     margin: 10px;
+    color: var(--grey-text);
 }
 form.searchbox:focus-within {
     border: 1px solid var(--primary);
@@ -147,7 +155,7 @@ form.searchbox button[type="submit"] {
     margin: 1.5px 1.5px;
     float: right;
     background-color: var(--primary);
-    border-radius: 3px;
+    border-radius: 2.1px;
 }
 form.searchbox button[type="submit"]:hover {
     background-color: var(--primary-off);
