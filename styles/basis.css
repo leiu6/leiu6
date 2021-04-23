@@ -7,7 +7,9 @@ html {
     --secondary: rgb(16, 59, 116);
     --secondary-off: rgb(2, 6, 63);
     --background: #fff;
-    --background-off: rgb(0, 204, 255);
+    --background-off: rgb(250, 250, 250);
+    --borders: rgb(212, 212, 212);
+    --grey-text: rgb(20, 20, 20);
 }
 body {
     margin: 0;
@@ -42,9 +44,11 @@ body a.secondary {
 button.btn {
     background-color: rgb(230, 230, 230);
     color: rgb(83, 83, 83);
-    border: 1px solid rgb(225, 225, 225);
+    border: 1px solid var(--borders);
+    /*border: 1px solid rgb(225, 225, 225);*/
     padding: 6px 9px;
     border-radius: 3px;
+    margin: 7px 0 7px 5px;
 }
 button.btn:hover {
     background-color: rgb(218, 218, 218);
@@ -80,3 +84,33 @@ p.secondary, span.secondary, h1.secondary, h2.secondary, h3.secondary, h4.second
 p.secondary-off, span.secondary-off, h1.secondary-off, h2.secondary-off,h3.secondary-off, h4.secondary-off, h5.secondary-off, h6.secondary-off {
     color: var(--secondary-off);
 }
+
+form.standard {
+    background-color: var(--background-off);
+    border: 1px solid var(--borders);
+    border-radius: 3px;
+    color: var(--grey-text);
+    padding: 15px;
+    display: inline-block;
+    margin: 10px;
+}
+form.standard label {
+    display: block;
+    font-size: 14px;
+    padding-left: 5px;
+}
+form.standard span {
+    font-size: 12px;
+}
+input.form {
+    padding: 6px 9px;
+    border-radius: 3px;
+    border: 1px solid var(--borders);
+    margin: 7px 0 7px 5px;
+    min-width: 250px;
+}
+input.form:focus-visible {
+    border: 1px solid var(--primary);
+    outline: none;
+}
+
