@@ -94,6 +94,10 @@ form.standard {
     display: inline-block;
     margin: 10px;
 }
+form.standard h1 {
+    margin: 0 0 15px 0;
+    font-size: 25px;
+}
 form.standard label {
     display: block;
     font-size: 14px;
@@ -101,6 +105,7 @@ form.standard label {
 }
 form.standard span {
     font-size: 12px;
+    margin: 0 5px 0 5px;
 }
 input.form {
     padding: 6px 9px;
