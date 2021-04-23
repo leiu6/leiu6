@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+html {
+    --text: #000;
+    --alt-text: #fff;
+    --primary: rgb(231, 0, 77);
+    --primary-off: rgb(177, 0, 59);
+    --secondary: rgb(16, 59, 116);
+    --secondary-off: rgb(2, 6, 63);
+    --background: #fff;
+    --background-off: rgb(0, 204, 255);
+}
+body {
+    margin: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+
+    background-color: var(--background);
+    color: var(--text);
+}
+body a {
+    color: var(--primary);
+    text-decoration: none;
+}
+body a:hover {
+    color: var(--primary);
+    text-decoration: underline;
+}
+body a:visited {
+    color: var(--primary);
+    text-decoration: none;
+}
+body a.secondary {
+    color: var(--secondary);
+}
+::selection {
+    color: var(--alt-text);
+    background: var(--secondary-off);
+}
+::-moz-selection {
+    color: var(--alt-text);
+    background: var(--secondary-off);
+}
+button.btn {
+    background-color: rgb(230, 230, 230);
+    color: rgb(83, 83, 83);
+    border: 1px solid rgb(225, 225, 225);
+    padding: 6px 9px;
+    border-radius: 3px;
+}
+button.btn:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+button.btn.active {
+    background-color: var(--primary);
+    color: var(--alt-text);
+    border: 1px solid var(--primary-off);
+}
+button.btn.active:hover {
+    background-color: var(--primary-off);
+}
+
+button.btn.secondary {
+    background-color: var(--secondary);
+    color: var(--alt-text);
+    border: 1px solid var(--secondary-off);
+}
+button.btn.secondary:hover {
+    background-color: var(--secondary-off);
+}
+
+p.primary, span.primary, h1.primary, h2.primary, h3.primary, h4.primary, h5.primary, h6.primary {
+    color: var(--primary);
+}
+p.primary-off, span.primary.off, h1.primary-off, h2.primary-off, h3.primary-off, h4.primary-off, h5.primary-off, h6.primary-off {
+    color: var(--primary-off);
+}
+p.secondary, span.secondary, h1.secondary, h2.secondary, h3.secondary, h4.secondary, h5.secondary, h6.secondary {
+    color: var(--secondary);
+}
+p.secondary-off, span.secondary-off, h1.secondary-off, h2.secondary-off,h3.secondary-off, h4.secondary-off, h5.secondary-off, h6.secondary-off {
+    color: var(--secondary-off);
+}
