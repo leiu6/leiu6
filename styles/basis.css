@@ -100,7 +100,7 @@ form.standard {
     display: inline-block;
     margin: 10px;
 }
-form.standard h1 {
+form.standard h2 {
     margin: 0 0 15px 0;
     font-size: 25px;
 }
@@ -123,6 +123,9 @@ input.form {
 input.form:focus-visible {
     border: 1px solid var(--primary);
     outline: none;
+}
+input.form[type="date"] {
+    font-family: inherit;
 }
 
 form.searchbox {
