@@ -128,30 +128,35 @@ input.form[type="date"] {
     font-family: inherit;
 }
 
-form.searchbox {
+div.searchbox {
     width: 400px;
     height: 40px;
     background-color: var(--background-off);
     border: 1px solid var(--borders);
     border-radius: 3px;
-    margin: 10px;
-    color: var(--grey-text);
+    color: var(--grey-text) !important;
 }
-form.searchbox:focus-within {
+div.searchbox:focus-within {
     border: 1px solid var(--primary);
 }
-form.searchbox input[type="search"] {
+div.searchbox form {
+    height: 40px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: 360px 40px;
+}
+div.searchbox form input[type="search"] {
     border: 0;
     background: transparent;
     height: 40px;
     width: 360px;
     padding-left: 5px;
 }
-form.searchbox input[type="search"]:focus-visible {
+div.searchbox form input[type="search"]:focus-visible {
     border: 0;
     outline: none;
 }
-form.searchbox button[type="submit"] {
+div.searchbox form button[type="submit"] {
     border: 0;
     height: 37px;
     width: 37px;
@@ -160,11 +165,75 @@ form.searchbox button[type="submit"] {
     background-color: var(--primary);
     border-radius: 2.1px;
 }
-form.searchbox button[type="submit"]:hover {
+div.searchbox form button[type="submit"]:hover {
     background-color: var(--primary-off);
 }
-form.searchbox button[type="submit"] svg {
+div.searchbox form button[type="submit"] svg {
     color: var(--alt-text);
     fill: currentColor;
     margin: 3px 0 0 1px;
+}
+
+div.searchbox.secondary:focus-within {
+    border: 1px solid var(--secondary) !important;
+}
+div.searchbox.secondary form button[type="submit"] {
+    background-color: var(--secondary);
+}
+div.searchbox.secondary form button[type="submit"]:hover {
+    background-color: var(--secondary-off);
+}
+
+header.bulkhead {
+    background-color: var(--primary);
+    color: (--alt-text);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto 100px;
+}
+header.bulkhead .lower {
+    height: 100px;
+    width: 100%;
+    line-height: 100px;
+    display: grid;
+    grid-template-columns: 300px auto 450px;
+}
+header.bulkhead .lower .left {
+    width: 300px;
+    height: 100px;
+}
+header.bulkhead .lower .left img {
+    width: 250px;
+    height: 83.3333333px;
+    margin: 9px 25px;
+}
+header.bulkhead .lower nav.middle {
+    font-size: 20px;
+}
+header.bulkhead .lower nav.middle a {
+    color: var(--alt-text);
+    text-decoration: none;
+    margin: 0 10px 0 10px;
+}
+header.bulkhead .lower nav.middle a:hover {
+    text-decoration: underline;
+}
+header.bulkhead .lower nav.middle a.active {
+    text-decoration: underline;
+}
+header.bulkhead .lower .right .searchbox {
+    margin: 30px 0;
+}
+
+header.bulkhead .upper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header.bulkhead .upper .middlebox {
+    width: 900px;
+    color: var(--alt-text);
+    font-size: 150px;
 }
