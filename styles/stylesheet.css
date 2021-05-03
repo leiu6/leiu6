@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
 
-:root {
+.lego {
     /* these are the site colors */
     --text: #000; /* default color for text */
     --alt-text: #fff; /* text color on dark backgrounds */
@@ -13,7 +13,6 @@
     --borders: rgb(212, 212, 212);  /* the color of borders for elements with a background color of --background or --background-off */
     --grey-text: rgb(20, 20, 20); /* this is a more grey version of the text color for certain alternative uses like forms */
 }
-
 :root {
     --text: #000;
     --alt-text: #fff;
