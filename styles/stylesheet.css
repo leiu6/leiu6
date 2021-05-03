@@ -237,3 +237,85 @@ header.bulkhead .upper .middlebox {
     color: var(--alt-text);
     font-size: 150px;
 }
+
+header.mini {
+    width: 100%;
+    height: 65px;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+header.mini img {
+    height: 65px;
+    width: 195px;
+}
+header.mini .burger-menu {
+    width: 65px;
+    height: 65px;
+}
+header.mini .burger-menu .open-icon {
+    width: 30px;
+    height: 30px;
+    margin: 17.5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+}
+header.mini .burger-menu .open-icon .line {
+    width: 35px;
+    height: 4px;
+    border-radius: 7.5px;
+    background-color: var(--alt-text);
+}
+header.mini .burger-menu .overlay {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: flex-end;
+}
+header.mini .burger-menu .overlay nav {
+    width: 300px;
+    height: 100vh;
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: column;
+}
+header.mini .burger-menu .overlay nav .close-icon {
+    width: 35px;
+    height: 35px;
+    margin: 17.5px;
+    cursor: pointer;
+    align-self: flex-end;
+}
+header.mini .burger-menu .overlay nav .close-icon .outer {
+    height: 35px;
+    width: 4px;
+    border-radius: 7.5px;
+    background-color: var(--alt-text);
+    transform: rotate(45deg);
+    margin-left: 15px;
+}
+header.mini .burger-menu .overlay nav .close-icon .outer .inner {
+    height: 35px;
+    width: 4px;
+    border-radius: 7.5px;
+    background-color: var(--alt-text);
+    transform: rotate(90deg);
+}
+header.mini .burger-menu .overlay nav ul {
+    list-style: none;
+    padding-left: 15px;
+    margin: 0;
+}
+header.mini .burger-menu .overlay nav ul li a {
+    color: var(--alt-text);
+    font-size: 30px;
+}
