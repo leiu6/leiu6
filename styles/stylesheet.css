@@ -301,7 +301,7 @@ header.mini .burger-menu .overlay nav .close-icon .outer {
     border-radius: 7.5px;
     background-color: var(--alt-text);
     transform: rotate(45deg);
-    margin-left: 15px;
+    margin-left: 5px;
 }
 header.mini .burger-menu .overlay nav .close-icon .outer .inner {
     height: 35px;
