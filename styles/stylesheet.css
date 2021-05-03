@@ -319,3 +319,8 @@ header.mini .burger-menu .overlay nav ul li a {
     color: var(--alt-text);
     font-size: 30px;
 }
+.hidden {
+    display: hidden !important;
+    visibility: none !important;
+    left: -100000000px !important;
+}
