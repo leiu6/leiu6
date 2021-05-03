@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
 :root {
     /* these are the site colors */
     --text: #000; /* default color for text */
@@ -11,6 +12,21 @@
     --background-off: rgb(250, 250, 250); /* a darker bakground color to contrast with --background */
     --borders: rgb(212, 212, 212);  /* the color of borders for elements with a background color of --background or --background-off */
     --grey-text: rgb(20, 20, 20); /* this is a more grey version of the text color for certain alternative uses like forms */
+}
+
+:root {
+    --text: #000;
+    --alt-text: #fff;
+    --primary: rgb(31, 126, 7);
+    --primary-off: rgb(25, 100, 6);
+    --secondary: rgb(70, 75, 28);
+    --secondary-off: rgb(46, 49, 15);
+    --background: rgba(0, 0, 0, 0.04);
+    --background-off: rgba(0, 0, 0, 0.01);
+    --borders: rgba(0, 0, 0, 0.1);
+    --grey-text: rgba(0, 0, 0, 0.9);
+    --error: rgb(211, 56, 56);
+    --success: rgb(32, 163, 49);
 }
 
 body {
