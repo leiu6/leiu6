@@ -245,6 +245,8 @@ header.mini {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
 }
 header.mini img {
     height: 65px;
