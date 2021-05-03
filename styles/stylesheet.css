@@ -353,7 +353,7 @@ footer {
 }
 
 article {
-    margin: 10px;
+    margin: 0 10px;
 }
 article .toc {
     background-color: var(--background-off);
@@ -405,4 +405,11 @@ main p {
     height: 250px;
     background-color: var(--primary-off);
     color: white;
+}
+
+main p .drop {
+    float: left;
+    width: 0.8em;
+    font-size: 600%;
+    line-height: 80%;
 }
